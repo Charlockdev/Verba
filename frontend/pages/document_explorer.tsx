@@ -104,17 +104,12 @@ export default function DocumentOnly() {
                             </div>
                         </div>
                         <div className="flex-1">
-                            <h1 className=" text-6xl font-bold">Verba</h1>
+                            <h1 className=" text-6xl font-bold">SmartyAI</h1>
                             <div className="flex text-lg">
-                                <span className="bg-opacity-0 rounded px-2 py-1 hover-container animate-pop-in">
-                                    The
-                                </span>
                                 <span className="bg-opacity-0 rounded font-bold px-2 py-1 hover-container animate-pop-in-late">
-                                    Golden
+                                    Intelligent response playground
                                 </span>
-                                <span className="bg-yellow-200 rounded px-2 py-1 hover-container animate-pop-more-late">
-                                    RAGtriever
-                                </span>
+
                             </div>
                         </div>
                     </div>

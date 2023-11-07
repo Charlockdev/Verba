@@ -28,12 +28,12 @@ type DocumentChunk = {
 export type DocType = "Documentation" | "Blog";
 export const DOC_TYPE_COLORS: Record<DocType, string> = {
   Documentation: "bg-green-300",
-  Blog: "bg-yellow-200",
+  Blog: "bg-red-200",
 };
 
 export const DOC_TYPE_COLOR_HOVER: Record<DocType, string> = {
   Documentation: "hover:bg-green-400",
-  Blog: "hover:bg-yellow-300",
+  Blog: "hover:bg-red-300",
 };
 
 export default function Home() {
@@ -227,22 +227,18 @@ export default function Home() {
         <div className="mb-2">
           <div className="flex justify-between items-center w-full"> {/* <-- flexbox container */}
             <div className="flex-none">
-              <div className="bg-yellow-200 border-2 border-gray-800 rounded-lg shadow-lg animate-pop-in hover-container mr-4 ">
+              <div style={{backgroundColor: '#F263FF'}} className=" border-2 border-gray-800 rounded-lg shadow-lg animate-pop-in hover-container mr-4 ">
                 <img src={`${bgUrl}verba.png`} alt="Verba Logo" className=" w-24 h-24 shadow-lg" />
               </div>
             </div>
             <div className="flex-1">
-              <h1 className=" text-6xl font-bold">Verba</h1>
+              <h1 className=" text-6xl font-bold">SmartyAI</h1>
               <div className="flex text-lg">
-                <span className="bg-opacity-0 rounded px-2 py-1 hover-container animate-pop-in">
-                  The
-                </span>
+ 
                 <span className="bg-opacity-0 rounded font-bold px-2 py-1 hover-container animate-pop-in-late">
-                  Golden
+                Intelligent response playground
                 </span>
-                <span className="bg-yellow-200 rounded px-2 py-1 hover-container animate-pop-more-late">
-                  RAGtriever
-                </span>
+
               </div>
             </div>
           </div>
@@ -278,26 +274,9 @@ export default function Home() {
           <div className="lg:w-1/2 md:w-full sm:w-full p-2 border-2 shadow-lg lg:h-2/3 sm:h-full md:h-full border-gray-900 rounded-xl animate-pop-in">
 
             {/* Header */}
-            <div className="rounded-t-xl bg-yellow-200 p-4 flex justify-between items-center">
-              Verba Chat
-              <div className="text-xs text-white font-mono flex justify-center">
-                <a href="https://github.com/weaviate/Verba" target="_blank" rel="noopener noreferrer">
-                  <span
-                    className={`rounded-indicator hover-container text-white p-2 ${apiStatus === 'Online'
-                      ? 'bg-green-500 hover:bg-green-400'
-                      : 'bg-red-500 hover:bg-red-400'
-                      }`}
-                  >
-                    Demo {apiStatus}
-                  </span>
-                </a>
-                <a href="https://www.weaviate.io" target="_blank" rel="noopener noreferrer">
-                  <span
-                    className="rounded-indicator text-white bg-green-500 hover:bg-green-400 ml-2 p-2 hover-container">
-                    Powered by Weaviate ❤️
-                  </span>
-                </a>
-              </div>
+            <div className="rounded-t-xl p-4 flex justify-between items-center" style={{backgroundColor: '#F263FF'}}>
+              Smarty Chat
+   
             </div>
 
             {/* ChatComponent */}
@@ -315,7 +294,7 @@ export default function Home() {
                 type="text"
                 value={userInput}
                 onChange={handleInputChange}
-                placeholder="What is a vector database?"
+                placeholder="Ask your question here!"
                 className="w-full p-2 rounded-md bg-white text-gray-900 placeholder-gray-400"
               />
             </form>

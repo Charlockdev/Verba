@@ -15,6 +15,12 @@ const config: Config = {
       '2xl': '1536px',
     },
     extend: {
+      colors: {
+        'yellow-200': '#F263FF',
+        'yellow-300': '#F263FF',
+        'green-300': '#FF6363',
+        'green-400': '#FF6363',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
