@@ -26,7 +26,6 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://verba-golden-ragtriever.onrender.com",
     "http://localhost:8000",
 ]
 

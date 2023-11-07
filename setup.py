@@ -14,7 +14,7 @@ setup(
     description="Welcome to Verba: The Golden RAGtriever, an open-source initiative designed to offer a streamlined, user-friendly interface for Retrieval-Augmented Generation (RAG) applications. In just a few easy steps, dive into your data and make meaningful interactions!",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/weaviate/Verba",
+    url="https://github.com/Charlockdev/Verba",
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3",
